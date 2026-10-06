@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>張永傑的個人部落格</title>
+    <style>
+        /* 基礎設定：黑色背景與紫色點綴 */
+        body {
+            background-color: #121212; /* 深黑色背景 */
+            color: #e0e0e0; /* 淺灰色文字，閱讀起來比純白舒服 */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* 頂部導覽列 */
+        header {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            border-bottom: 2px solid #9b59b6; /* 紫色邊框 */
+            text-align: center;
+        }
+        header nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #9b59b6; /* 滑鼠移過去變紫色 */
+        }
+
+        /* 主要內容區塊 */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h1, h2 {
+            color: #9b59b6; /* 紫色標題 */
+        }
+
+        /* 文章列表設計 */
+        .article-card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #9b59b6;
+        }
+        .article-card h3 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+        .article-card p {
+            font-size: 0.95rem;
+            color: #b0b0b0;
+        }
+        
+        /* 按鈕與連結 */
+        .btn {
+            display: inline-block;
+            background-color: #9b59b6;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #8e44ad;
+        }
+
+        /* 頁尾 */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #0a0a0a;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">關於我</a>
+            <a href="#articles">文章列表</a>
+            <a href="#contact">聯絡方式</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- 自我介紹區塊 -->
+        <section id="about">
+            <h2>關於我</h2>
+            <p>嗨，我是張永傑。目前就讀於台科大營建工程系。</p>
+            <p>這個部落格是我記錄技術研究與生活軌跡的地方。在專業上，我專注於無人機空拍點雲分析、AI 代理工作流，以及 OpenSeesPy 等結構模擬應用；在生活裡，我喜歡早起爬山鍛鍊，也熱衷於電吉他改裝與詞曲創作。</p>
+        </section>
+
+        <!-- 文章列表區塊 -->
+        <section id="articles">
+            <h2>文章列表</h2>
+            
+            <!-- 示範文章 1 (學術/技術) -->
+            <div class="article-card">
+                <h3>無人機空拍結合 AI 進行土方量自動化計算之可行性評估</h3>
+                <p>分類：技術研究 | 日期：2026-10-06</p>
+                <p>探討如何利用無人機技術與 AI 辨識，取代傳統測量方式，提升營建土方量估算的效率與精準度。</p>
+                <a href="#" class="btn">閱讀全文</a>
+            </div>
+
+            <!-- 示範文章 2 (音樂/生活) -->
+            <div class="article-card">
+                <h3>Ibanez GIO GRX70QA 電吉他改裝：換上 Seymour Duncan Pegasus 與接地雜音排除</h3>
+                <p>分類：音樂生活 | 日期：2026-10-01</p>
+                <p>記錄這次將琴橋拾音器升級，並重新焊接解決電路接地雜音的實作過程，附上改裝前後的音色試聽與電路圖。</p>
+                <a href="#" class="btn">閱讀全文</a>
+            </div>
+            
+            <!-- 未來的下載專區預留空間 -->
+            <div class="article-card">
+                <h3>🎸 基礎電吉他教學講義 (共 8 堂課)</h3>
+                <p>分類：學習資源 | 日期：2026-09-20</p>
+                <p>這是我整理給初學者的 4 個月教學計畫，涵蓋 TAB 譜閱讀、Power Chord 與節奏技巧。</p>
+                <!-- 這邊就是你未來讓別人下載檔案的地方 -->
+                <a href="guitar_lesson.pdf" download class="btn">⬇️ 點此下載講義 (PDF)</a>
+            </div>
+        </section>
+
+        <!-- 聯絡方式區塊 -->
+        <section id="contact">
+            <h2>聯絡方式</h2>
+            <p>歡迎與我交流技術或音樂！</p>
+            <ul>
+                <li>Email: your.email@example.com</li>
+                <li>GitHub: <a href="#" style="color: #9b59b6;">github.com/your-username</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 張永傑. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
